@@ -4,6 +4,7 @@ import About from "./Component/About";
 import UpdateData from "./Component/Statef";
 import Abc from "./Component/StateC";
 import Student from "./Component/PropF";
+import ST from "./Component/PropC";
 
 const Home = () => {
   return (
@@ -12,7 +13,7 @@ const Home = () => {
       {/* <Footer /> */}
       {/* <UpdateData /> */}
       {/* <Abc /> */}
-      <Student
+      {/* <Student
         name="umar"
         email="ch@gmail.com"
         others={{ address: "g4", contact: "0345678" }}
@@ -31,7 +32,9 @@ const Home = () => {
         name="Khizar"
         email="ch@gmail.com"
         others={{ address: "g4", contact: "0345678" }}
-      />
+      /> */}
+
+      <ST name="khizar" email="ch@gmail.com" />
     </div>
   );
 };

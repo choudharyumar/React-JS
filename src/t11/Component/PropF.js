@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Student = (prop) => {
-  console.log(prop);
+  // console.log(prop);
+  const [name, setstate] = useState("Umar");
   return (
     <div
       style={{
@@ -11,7 +12,14 @@ const Student = (prop) => {
         borderRadius: "18px",
       }}
     >
-      <h1> hello: {prop.name} </h1>
+      <h1> hello: {name} </h1>
+      <button
+        onClick={() => {
+          setstate("Ali");
+        }}
+      >
+        update by click
+      </button>
       <h2> hello: {prop.email} </h2>
       <h3> address: {prop.others.address} </h3>
       <h3> address: {prop.others.contact} </h3>
