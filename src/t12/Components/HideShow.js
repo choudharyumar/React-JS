@@ -21,6 +21,7 @@ const HideShow = () => {
       </button>
        */}
 
+      {/* this is for toggle */}
       <button
         onClick={() => {
           setstate(!data);
