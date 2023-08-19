@@ -10,6 +10,7 @@ import RenderMethod from "./Components/RenderMethod";
 import CompDidMount from "./Components/CompDidMount";
 import CompDidUpdate from "./Components/CompDidUpdate";
 import ShdCmUpdt from "./Components/ShdCmUpdt";
+import Unmount from "./Components/CompUnmount";
 
 const Home = () => {
   // this is the pass function as a prop
@@ -42,7 +43,8 @@ const Home = () => {
 
       {/* <CompDidMount /> */}
       {/* <CompDidUpdate /> */}
-      <ShdCmUpdt />
+      {/* <ShdCmUpdt /> */}
+      {/* <Unmount /> */}
     </div>
   );
 };
