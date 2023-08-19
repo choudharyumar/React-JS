@@ -7,6 +7,9 @@ import FormValidation from "./FormValidation";
 import PassFasProp from "./Components/PassFasProp";
 import Constructor from "./Components/Constructor";
 import RenderMethod from "./Components/RenderMethod";
+import CompDidMount from "./Components/CompDidMount";
+import CompDidUpdate from "./Components/CompDidUpdate";
+import ShdCmUpdt from "./Components/ShdCmUpdt";
 
 const Home = () => {
   // this is the pass function as a prop
@@ -27,7 +30,7 @@ const Home = () => {
       {/* <PassFasProp data={getvalue} /> */}
       {/* <Constructor /> */}
       {/* <RenderMethod name={name} /> */}
-      <RenderMethod />
+      {/* <RenderMethod /> */}
 
       {/* <button
         onClick={() => {
@@ -36,6 +39,10 @@ const Home = () => {
       >
         Click me
       </button> */}
+
+      {/* <CompDidMount /> */}
+      {/* <CompDidUpdate /> */}
+      <ShdCmUpdt />
     </div>
   );
 };
