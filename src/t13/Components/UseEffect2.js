@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import User from "./User";
 
 const UseEffect2 = () => {
   const [data, setdata] = useState(100);
@@ -6,10 +7,14 @@ const UseEffect2 = () => {
   useEffect(() => {
     console.log("called with data state");
   }, [data]);
+  useEffect(() => {
+    alert("count is" + count);
+  }, [count]);
 
   return (
     <div>
-      <h1>data::{data}</h1>
+      <User count={count} data={data} />
+      {/* <h1>data::{data}</h1> */}
       <button
         onClick={() => {
           setdata(data + 1);
@@ -17,7 +22,7 @@ const UseEffect2 = () => {
       >
         update data
       </button>
-      <h1>data::{count}</h1>
+      {/* <h1>count::{count}</h1> */}
       <button
         onClick={() => {
           setcount(count + 1);
