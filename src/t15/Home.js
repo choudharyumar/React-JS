@@ -1,7 +1,6 @@
 import LiftingState from "./Components/LiftingState";
 import PureComp from "./Components/PureComp";
 import Usememo1 from "./Components/Usememo";
-import Usememo from "./Components/Usememo";
 
 const Home = () => {
   // let name = "umar";
