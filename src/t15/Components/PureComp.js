@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react";
+import PureComp1 from "./PureComp1";
 
 class PureComp extends PureComponent {
   constructor() {
@@ -11,8 +12,11 @@ class PureComp extends PureComponent {
     console.warn("Here is rendering");
     return (
       <div>
-        <h1>here is the count::{this.state.count} </h1>
-        <button onClick={() => this.setState({ count: 2 })}>update</button>
+        {/* <h1>here is the count::{this.state.count} </h1> */}
+        <PureComp1 count={this.state.count} />
+        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+          update
+        </button>
       </div>
     );
   }
