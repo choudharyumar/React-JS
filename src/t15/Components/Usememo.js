@@ -1,10 +1,10 @@
-import React, { useState, Usememo } from "react";
+import React, { useState, useMemo } from "react";
 
 const Usememo1 = () => {
-  const [count, setcount] = useState(0);
+  const [count, setcount] = useState(1);
   const [item, setitem] = useState(10);
 
-  const abcMemo = Usememo(
+  const abcMemo = useMemo(
     function abc() {
       console.log("here is function");
       return count + 1;

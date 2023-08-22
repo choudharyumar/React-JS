@@ -6,6 +6,7 @@ import Project3 from "./t13";
 import { Button } from "bootstrap";
 import Project4 from "./t14";
 import Project5 from "./t15";
+import ControlledComp from "./t15/Components/ControlledComp";
 
 const App = () => {
   return (
@@ -13,7 +14,8 @@ const App = () => {
       <h1>This is main file</h1>
       {/* <Project3 /> */}
       {/* <Project4 /> */}
-      <Project5 />
+      {/* <Project5 /> */}
+      <ControlledComp />
     </div>
   );
 };
