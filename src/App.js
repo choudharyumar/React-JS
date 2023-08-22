@@ -14,8 +14,7 @@ const App = () => {
       <h1>This is main file</h1>
       {/* <Project3 /> */}
       {/* <Project4 /> */}
-      {/* <Project5 /> */}
-      <ControlledComp />
+      <Project5 />
     </div>
   );
 };

@@ -2,6 +2,7 @@ import ForwardRef from "./Components/ForwardRef";
 import LiftingState from "./Components/LiftingState";
 import PureComp from "./Components/PureComp";
 import Ref from "./Components/Ref";
+import UncontrolledComp from "./Components/UncontrolledComp";
 import UseRef from "./Components/UseRef";
 import Usememo1 from "./Components/Usememo";
 
@@ -18,7 +19,9 @@ const Home = () => {
       {/* <Usememo1 /> */}
       {/* <Ref /> */}
       {/* <UseRef /> */}
-      <ForwardRef />
+      {/* <ForwardRef /> */}
+      {/* <ControlledComp /> */}
+      <UncontrolledComp />
     </div>
   );
 };
