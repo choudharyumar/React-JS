@@ -12,6 +12,10 @@ const Navbr = () => {
           {" "}
           <Link to="/services">Services</Link>
         </li>
+        <li>
+          {" "}
+          <Link to="/contact">contact</Link>
+        </li>
       </ul>
     </>
   );
