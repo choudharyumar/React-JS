@@ -1,20 +1,39 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "./User.css";
 const Navbr = () => {
   return (
     <>
-      <ul>
+      <ul className="navbar">
         <li>
           {" "}
-          <Link to="/">About</Link>
+          <NavLink
+            style={({ isactive }) => {
+              return { backgroundColor: isactive ? "green" : "#c8e7d1" };
+            }}
+            className="navbar-li"
+            to="/"
+          >
+            About
+          </NavLink>
         </li>
         <li>
           {" "}
-          <Link to="/services">Services</Link>
+          <NavLink className={"navbar-li"} to="/services">
+            Services
+          </NavLink>
         </li>
         <li>
           {" "}
-          <Link to="/contact">contact</Link>
+          <NavLink className={"navbar-li"} to="/contact">
+            contact
+          </NavLink>
+        </li>
+        <li>
+          {" "}
+          <NavLink className={"navbar-li"} to="/filter">
+            filter
+          </NavLink>
         </li>
       </ul>
     </>

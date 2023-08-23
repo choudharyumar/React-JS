@@ -1,0 +1,19 @@
+.navbar {
+  display: inline-block;
+  text-decoration: none;
+}
+.navbar .active {
+  color: rgb(238, 30, 113);
+  border: 2px solid orange;
+  background-color: antiquewhite;
+}
+.navbar li {
+  display: inline-block;
+  text-align: right;
+  margin: 10px 8px;
+  padding: 10px 5px;
+  font-size: 25px;
+}
+.navbar-li {
+  text-decoration: none;
+}
