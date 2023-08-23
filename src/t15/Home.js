@@ -1,4 +1,5 @@
 import ForwardRef from "./Components/ForwardRef";
+import Hoc from "./Components/Hoc";
 import LiftingState from "./Components/LiftingState";
 import PureComp from "./Components/PureComp";
 import Ref from "./Components/Ref";
@@ -21,7 +22,8 @@ const Home = () => {
       {/* <UseRef /> */}
       {/* <ForwardRef /> */}
       {/* <ControlledComp /> */}
-      <UncontrolledComp />
+      {/* <UncontrolledComp /> */}
+      <Hoc />
     </div>
   );
 };
