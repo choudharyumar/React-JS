@@ -1,6 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const Services = () => {
+  const location = useLocation();
+  console.log(location);
   return (
     <div>
       <h1>this is the services page</h1>

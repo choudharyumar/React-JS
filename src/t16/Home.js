@@ -14,6 +14,9 @@ import Navbr from "./Components/Navbr";
 import Page404 from "./Components/Page404";
 import User from "./Components/User";
 import UseParam from "./Components/UseParam";
+import Contact from "./Components/Contact";
+import Company from "./Components/Company";
+import Other from "./Components/Other";
 
 const Home = () => {
   return (
@@ -27,6 +30,10 @@ const Home = () => {
           <Route path="/*" element={<Navigate to={"services"} />}></Route>
           <Route path="/user/:name" element={<User />}></Route>
           <Route path="/filter" element={<UseParam />}></Route>
+          <Route path="/contact/" element={<Contact />}>
+            <Route path="company" element={<Company />}></Route>
+            <Route path="other" element={<Other />}></Route>
+          </Route>
         </Routes>
       </BrowserRouter>
     </>
