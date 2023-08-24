@@ -17,6 +17,8 @@ import UseParam from "./Components/UseParam";
 import Contact from "./Components/Contact";
 import Company from "./Components/Company";
 import Other from "./Components/Other";
+import Login from "./Components/Login";
+import Protected from "./Components/Protected";
 
 const Home = () => {
   return (
@@ -24,14 +26,19 @@ const Home = () => {
       <BrowserRouter>
         <Navbr />
         <Routes>
-          <Route path="/" element={<About />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+
+          <Route path="/" element={<Protected Compo={About} />}></Route>
           <Route path="/services" element={<Services />}></Route>
           {/* <Route path="/*" element={<Page404 />}></Route> */}
           <Route path="/*" element={<Navigate to={"services"} />}></Route>
           <Route path="/user/:name" element={<User />}></Route>
           <Route path="/filter" element={<UseParam />}></Route>
           <Route path="/contact/" element={<Contact />}>
-            <Route path="company" element={<Company />}></Route>
+            <Route
+              path="company"
+              element={<Protected Compo={Company} />}
+            ></Route>
             <Route path="other" element={<Other />}></Route>
           </Route>
         </Routes>

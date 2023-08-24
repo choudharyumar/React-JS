@@ -7,6 +7,12 @@ const Navbr = () => {
       <ul className="navbar">
         <li>
           {" "}
+          <NavLink className={"navbar-li"} to="/login">
+            login
+          </NavLink>
+        </li>
+        <li>
+          {" "}
           <NavLink
             style={({ isactive }) => {
               return { backgroundColor: isactive ? "green" : "#c8e7d1" };
