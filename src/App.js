@@ -10,6 +10,7 @@ import ControlledComp from "./t15/Components/ControlledComp";
 import Project6 from "./t16";
 import Project7 from "./API";
 import Project8 from "./t17";
+import Project9 from "./t18";
 
 const App = () => {
   return (
@@ -20,7 +21,8 @@ const App = () => {
       {/* <Project5 /> */}
       {/* <Project6 /> */}
       {/* <Project7 /> */}
-      <Project8 />
+      {/* <Project8 /> */}
+      <Project9 />
     </div>
   );
 };
