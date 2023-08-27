@@ -11,18 +11,20 @@ import Project6 from "./t16";
 import Project7 from "./API";
 import Project8 from "./t17";
 import Project9 from "./t18";
-
+import HomeContainer from "./t19/Containers/HomeContainer";
+import "./App.css";
 const App = () => {
   return (
-    <div>
-      <h1>This is main file</h1>
+    <div className="App">
+      {/* <h1>This is main file</h1> */}
       {/* <Project3 /> */}
       {/* <Project4 /> */}
       {/* <Project5 /> */}
       {/* <Project6 /> */}
       {/* <Project7 /> */}
       {/* <Project8 /> */}
-      <Project9 />
+      {/* <Project9 /> */}
+      <HomeContainer />
     </div>
   );
 };
