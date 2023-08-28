@@ -24,7 +24,7 @@ const App = () => {
       {/* <Project7 /> */}
       {/* <Project8 /> */}
       {/* <Project9 /> */}
-      <HomeContainer />
+      {/* <HomeContainer /> */}
     </div>
   );
 };

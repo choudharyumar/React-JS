@@ -5,11 +5,11 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 //
-import { createStore } from "redux";
-import { Provider } from "react-redux";
-import rootReducer from "./t19/Services/Reducers/index";
-const store = createStore(rootReducer);
-console.log("store", store, rootReducer);
+// import { createStore } from "redux";
+// import { Provider } from "react-redux";
+// import rootReducer from "./t19/Services/Reducers/index";
+// const store = createStore(rootReducer);
+// console.log("store", store, rootReducer);
 //
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
