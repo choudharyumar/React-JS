@@ -12,7 +12,10 @@ import Project7 from "./API";
 import Project8 from "./t17";
 import Project9 from "./t18";
 import HomeContainer from "./t19/Containers/HomeContainer";
+import App1 from "./t20/Components/Home";
+
 import "./App.css";
+
 const App = () => {
   return (
     <div className="App">
@@ -25,6 +28,8 @@ const App = () => {
       {/* <Project8 /> */}
       {/* <Project9 /> */}
       {/* <HomeContainer /> */}
+
+      <App1 />
     </div>
   );
 };

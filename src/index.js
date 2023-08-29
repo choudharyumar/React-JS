@@ -11,6 +11,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // const store = createStore(rootReducer);
 // console.log("store", store, rootReducer);
 //
+
+// for increment decrement
+import { Provider } from "react-redux";
+import store from "./t20/Services/Reducers";
+//
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
